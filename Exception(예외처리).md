@@ -4,9 +4,10 @@
   - [에러 종류](#예외-종류)
 - [예외처리 사용법](#예외처리-사용법)
   - [try-catch](#try-catch)
-  - try-catch-finnay(#try-catch-finnay)
-- [예외처리 종류](#예외처리-종류)
-
+  - [try-catch-finally](#try-catch-finally)
+  - [예외처리 종류](#예외처리-종류)
+  - [throws 예약어](#throws-예약어)
+  - [사용자 정의 예외](#사용자-정의-예외)
 
 
 # 예외(Exception)란?
@@ -34,10 +35,136 @@ catch(예외 클래스 변수){
 예외 처리
 }
  ```
+1. try-catch는 같이 사용해야 된다. 단독으로 하나만 사용할 수 있다.
+2. 하나의 try와 여러개의 catch를 사용할 수 있다. (여러개의 예외처리 가능)
+3. try안에 try-catch를 사용할 수 있다.
 
+**2.try-catch-finally**
+finally는 try-catch를 사용해서 예외가 발생해도 finally 안에 코드는 무조건 실행한다.
 
-
+ ```java
+ try{
+예외가 발생할 만한 코드
+}
+catch(예외 클래스 변수){
+예외 처리
+}
+finally{
+ 무조건 실행할 코드
+}
+ ```
  
+ 자바에서 모든 클래스의 최상위 클래스는 Object 클래스이다. 
+ 
+ **예외클래스의 상속 구조**
+ 
+ 예외 클래스들의 상속 구조는 아래 그림과 같다.
+             Error
+               ↓
+ Object -> Throwable
+               ↑
+           Exception
+           
+1. RunTimeException
+런타임 Exception들은 프로그램이 실행시 에러가 난다. 보통 개발자가 프로그램을 제대로 구현하지 않을
+경우 에러가 난다. 
+- 런타임 Exception 종류 : 
+  - NullPointException: 레퍼런스 변수 값을 초기화 하지 않고 해당 객체의 변수나 메서드를 호출할 경우 
+    발생한다.
+  - ArrayIndexOutOfBoundsException : 배열의 인덱스가 초과 했을때 발생한다.
+  - ArithmeticException: 정수를 0으로 나누었을때 발생한다.
+
+2. RunTimeException이 아닌 일반 Exception들
+일반 예외들은 반드시 예외처리 해줘야 한다. 예외처리를 안해줄 경우 컴파일 실행시 프로그램이 에러가 난다.
+
+- 일반 Exception 종류:
+  - FileNot-FoundException: 없는 파일을 찾을 경우 발생한다.
+  - IOException: 입출력시 예외 
+
+**throws 예약어**
+throws 예약어는 자신 메서드에서 예외처리를 하는게 아니라 자신을 호출한 메서드에서 예외를 처리하게끔 예외를 던지는 것을 의미한다.
+
+``` java
+public class Exception02 {
+
+	public static void main(String[] args) {
+
+		try {
+			methodA();
+		}catch(Exception e) {
+			System.out.println("MethodA");
+		}
+	}
+	public static void methodA() throws Exception{
+		
+		methodB();
+		
+	}
+	public static void methodB() throws Exception{
+		methodC();
+	}
+	public static void methodC() throws Exception{
+		Exception e = new Exception();
+		throw e;
+	}
+
+}
+```
+methodC -> methodB -> methodA -> main 순으로 예외를 던져진다.
+
+** 사용자 정의 예외**
+사용저 정의 예외는 말 그대로 사용자가 정의한 예외이다. 사용자 정의 예외는 Throwable 클래스를 사용할 수 있지만 대부분 Exception 클래스를 많이 사용한다.
+
+예제)
+```java
+class ArgsException extends Exception{  // Exception 클래스를 상속받아서 사용자 예외를 정의하는 부분
+	
+	private int argsNumber;
+
+	public int getArgsNumber() {
+		return argsNumber;
+	}
+
+	public void setArgsNumber(int argsNumber) {
+		this.argsNumber = argsNumber;
+	}
+	public ArgsException(String msg) {
+		super(msg);
+	}
+
+	
+}
+public class ExceptionTest {
+
+	public static void main(String[] args) {
+
+	 try {
+		 if(args.length != 2) {
+			 ArgsException ae = new ArgsException("인자를 두 개 입력해야합니다.");
+			 ae.setArgsNumber(args.length);
+			 throw ae;  // 예외를 발생시킨다.
+			 
+		 }
+		 else {
+			 int num1 = Integer.parseInt(args[0]);
+			 int num2 = Integer.parseInt(args[1]);
+			 
+			 System.out.println(num1 + " + " + num2 +" = "+(num1 + num2));
+			 
+		 }
+	 }catch(ArgsException e) {
+		 System.out.println(e.getMessage()); 
+		 System.out.println("당신이 입력한 인자 수는 "+e.getArgsNumber() + "개입니다.");
+	 }
+	}
+
+}
+
+```
+
+          
+           
+
 
 
  
