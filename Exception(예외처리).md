@@ -14,7 +14,7 @@
 예외란 프로그램 실행 도중 오류가 발생했을 때 처리가 가능한 것을 의미
 
 # 예외 처리(Exception Handling)란? 
-예외처리란 개발자가 오류가 발생할 것을 미리 인지해서 오류로 인해 프로그램이 비정상르로 종료된는 것을 막는 방법.
+예외처리란 개발자가 오류가 발생할 것을 미리 인지해서 오류로 인해 프로그램이 비정상으로 종료되는 것을 막는 방법.
 
 ## 에러 종류
 
@@ -35,12 +35,12 @@ catch(예외 클래스 변수){
 예외 처리
 }
  ```
-1. try-catch는 같이 사용해야 된다. 단독으로 하나만 사용할 수 있다.
+1. try-catch는 같이 사용해야 된다. (단독으로 하나만 사용할 수 없다.)
 2. 하나의 try와 여러 개의 catch를 사용할 수 있다. (여러 개의 예외 처리 가능)
-3. tr 안에 try-catch를 사용할 수 있다.
+3. try 안에 try-catch를 사용할 수 있다.
 
 **2.try-catch-finally**
-finally는 try-catch를 사용해서 예외가 발생해도 finally 안에 코드는 무조건 실행한다.
+finally는 try-catch를 사용해서 예외가 발생해도 finally 안에 코드는 무조건 실행된다.
 
  ```java
  try{
@@ -54,10 +54,11 @@ finally{
 }
  ```
  
- 자바에서 모든 클래스의 최상위 클래스는 Object 클래스이다. 
+ 
  
  **예외 클래스의 상속 구조**
  
+ 자바에서 모든 클래스의 최상위 클래스는 Object 클래스이다. 
  예외 클래스들의 상속 구조는 아래 그림과 같다.
  ```
  
@@ -110,12 +111,13 @@ public class Exception02 {
 	}
 	public static void methodC() throws Exception{
 		Exception e = new Exception();
-		throw e;
+		throw e; // throw는 고의로 예외를 일으킬 때 사용한다..
 	}
 
 }
 ```
 methodC -> methodB -> methodA -> main 순으로 예외를 던져진다.
+### throw는 고의로 예외를 일으킬 때 사용한다.
 
 **사용자 정의 예외**
 사용자 정의 예외는 말 그대로 사용자가 정의한 예외이다. 사용자 정의 예외는 Throwable 클래스를 사용할 수 있지만 대부분 Exception 클래스를 많이 사용한다.
