@@ -112,7 +112,7 @@ public class Exception02 {
 ```
 methodC -> methodB -> methodA -> main 순으로 예외를 던져진다.
 
-** 사용자 정의 예외**
+**사용자 정의 예외**
 사용저 정의 예외는 말 그대로 사용자가 정의한 예외이다. 사용자 정의 예외는 Throwable 클래스를 사용할 수 있지만 대부분 Exception 클래스를 많이 사용한다.
 
 예제)
