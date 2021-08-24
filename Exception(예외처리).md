@@ -59,11 +59,14 @@ finally{
  **예외 클래스의 상속 구조**
  
  예외 클래스들의 상속 구조는 아래 그림과 같다.
+ ```
              Error
                ↓
  Object -> Throwable
                ↑
            Exception
+	   
+```
            
 1. RunTimeException
 런타임 Exception들은 프로그램이 실행 시 에러가 난다. 보통 개발자가 프로그램을 제대로 구현하지 않을
