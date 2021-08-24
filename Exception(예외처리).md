@@ -1,12 +1,12 @@
 **목차**
-- [예외(Exception)란?](예외(Exception)란?)
-- [예외처리(Exception Handling)란?](예외처리(Exception Handling)란?)
-  - [에러 종류](예외 종류)
-- [예외처리 사용법](예외처리 사용법)
-  - [try-catch](try-catch)
+- [예외(Exception)란?](#예외(Exception)란?)
+- [예외처리(Exception Handling)란?](#예외처리(Exception Handling)란?)
+  - [에러 종류](#예외 종류)
+- [예외처리 사용법](#예외처리 사용법)
+  - [try-catch](#try-catch)
   - try-catch-finnay
   - 예외 
-- [예외처리 종류](예외처리 종류)
+- [예외처리 종류](#예외처리 종류)
 
 
 
