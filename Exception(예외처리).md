@@ -60,11 +60,13 @@ finally{
  
  예외 클래스들의 상속 구조는 아래 그림과 같다.
  ```
+ 
              Error
                ↓
  Object -> Throwable
                ↑
            Exception
+	   
 	   
 ```
            
