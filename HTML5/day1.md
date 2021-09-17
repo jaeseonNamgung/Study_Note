@@ -10,7 +10,7 @@
 2. <html lang="ko"> : HTML 문서의 시작을 알리며 lang 속성을 사용해 문서에서 사용할 언어를 지정한다.
   - **휴먼 랭귀지란?** lang는 휴먼 랭귀지를 뜻하며 language의 약자이다. [한국(korean) : ko, 영어(english) : en, 일본(japan) : ja, 중국(china) : zh]
 3. <head> : 문서 서두에 해당, CSS를 비롯한 자바스크립트, 외부 페이지 연결 등의 구성을 하는 부분이다.
-4. <meta charset="utf-8"> : 언어 캐릭터 셋 
+4. <meta charset="utf-8"/> : 언어 캐릭터 셋 
   - **언어 캐릭터 셋 :** HTML로 저장된 파일 내부에는 태그를 포함한 텍스트의 콘텐츠이다.
 5. <title></title> : 브라우저 탭 또는 즐겨찾기에 표시되는 제목 영역
 6. </head>
