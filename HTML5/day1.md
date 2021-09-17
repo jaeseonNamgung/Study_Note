@@ -12,12 +12,15 @@
 3. <head> : 문서 서두에 해당, CSS를 비롯한 자바스크립트, 외부 페이지 연결 등의 구성을 하는 부분이다.
 4. <meta charset="utf-8"/> : 언어 캐릭터 셋 
   - **언어 캐릭터 셋 :** HTML로 저장된 파일 내부에는 태그를 포함한 텍스트의 콘텐츠이다.
+5. <meta name="viewport" content="width=device-width, initial-scale=1.0"> :  페이지의 너비를 기기의 스크린 너비로 설정, 처음 페이지 로딩시 확대/축소가 되지 않은 원래 크기를 사용 
+6. <meta name="viewport" content="width=device-width, initial-scale=1.0"> : IE 버전이 다르더라도 같은 화면을 볼 수 있도록 하는 것을 의미 
 5. <title></title> : 브라우저 탭 또는 즐겨찾기에 표시되는 제목 영역
-6. </head>
-7. <boby> : 실제 브라우저 화면에 표시되는 영역이다.
-8. </boby>
-9. </html>
+6. </head> : head 끝 부분
+7. <body> : 실제 브라우저 화면에 표시되는 영역이다.
+8. </body> : body 끝 부분
+9. </html> : html 끝 부분
 
+ 
 ## 문서를 만들거나, 폴더를 만들 때 주의사항(이름, 문서, 폴더, 파일, 선택자 --> 전부 적용)
 - 영문으로 작성해야 한다.
 - 대소문자를 구분해야 한다.
@@ -27,4 +30,77 @@
 - 영문 뒤에 숫자 사용을 권장한다. 
   
 
+# 태그 종류
 
+## 주석
+1. 코멘드 용도 
+  - 코드에 대한 설명
+  - 프로그램한 것들을 기록
+2. 디버깅 용도
+  - 코드를 잠시 사용하지 않을 때
+```html
+<!--주석 내용-->
+```
+
+## 제목 태그 
+- 제목 태그는 작성한 순서대로 위에서 아래로 쌓이는 형태이다. 
+- h1 ~ h6 : 숫자가 뒤로 갈수록 글자 사이즈가 줄어든다. 
+- **타이틀에 사용** 
+
+```html
+    <h1>header-1</h1>
+    <h2>header-1</h2>
+    <h3>header-1</h3>
+    <h4>header-1</h4>
+    <h5>header-1</h5>
+    <h6>header-1</h6>
+```
+![image](https://user-images.githubusercontent.com/84066249/133821778-98af93bb-fc9c-4563-a20e-0d96a2fc3a55.png)
+
+
+## 단락(p)
+본문에서 구분하거나 나타낼 때 사용, 주로 글자를 담아서 표현
+```html
+<p>제목 내용</p>
+```
+
+![image](https://user-images.githubusercontent.com/84066249/133823249-5c7437d7-445d-4d5a-9304-61b00b8beee9.png)t
+html에서는 마음대로 줄바꿈을 하거나 띄어쓰기를 할 수 없다. 
+```html
+ <P>
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+    Lorem Ipsum has been the industry's standard
+   </P>
+
+   <P>
+    dummy text ever since the 1500s,
+    when an unknown printer took a galley of type and scrambled it to make a type specimen book
+```
+![image](https://user-images.githubusercontent.com/84066249/133823749-8f268456-1cb9-40bc-9411-cfd6a761d77f.png)
+
+p 태그를 사용할 경우 단락을 구분할 수 있다. 
+
+### 줄바꿈 <br/>
+
+```html
+내용... <br/>
+내용...<br/)
+```
+![image](https://user-images.githubusercontent.com/84066249/133823928-51c7b436-d5e2-4785-a987-edde763be7df.png)
+ 
+ br을 띄어쓰기가 가능해진다. 
+ 
+ ## 수평선 <hr/>
+ - 수평선을 나타내는 태그
+ - 단락의 구분
+ - 주제가 바뀔 때
+ - 입체적
+ 
+ ```html
+<hr/>
+```
+![image](https://user-images.githubusercontent.com/84066249/133824664-c8ca5f1d-afeb-4519-91dd-ad79a46d1edb.png)
+
+
+ ```
+ 
