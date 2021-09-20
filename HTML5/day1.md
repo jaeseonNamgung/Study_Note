@@ -79,15 +79,15 @@
 html에서는 마음대로 줄바꿈을 하거나 띄어쓰기를 할 수 없다. 
 
 ```html
-   <P>
+   <p>
     Lorem Ipsum is simply dummy text of the printing and typesetting industry.
     Lorem Ipsum has been the industry's standard
-   </P>
+   </p>
 
-   <P>
+   <p>
     dummy text ever since the 1500s,
     when an unknown printer took a galley of type and scrambled it to make a type specimen book
-   </P>
+   </p>
 ```
 ![image](https://user-images.githubusercontent.com/84066249/133823749-8f268456-1cb9-40bc-9411-cfd6a761d77f.png)
 
