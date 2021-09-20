@@ -6,19 +6,19 @@
 태그는 꺾쇠를 이용해서 사용하고 앞에 <>가 시작 태그이고 뒤에</>는 끝 태그이다.
 
 ## html 기본 구조
-1. <!DOCTYPE html> : 지금 사용하는 문서 타입은 HTML 형식을 사용한다.
-2. <html lang="ko"> : HTML 문서의 시작을 알리며 lang 속성을 사용해 문서에서 사용할 언어를 지정한다.
+1. ```<!DOCTYPE html>``` : 지금 사용하는 문서 타입은 HTML 형식을 사용한다.
+2. ```<html lang="ko">``` : HTML 문서의 시작을 알리며 lang 속성을 사용해 문서에서 사용할 언어를 지정한다.
   - **휴먼 랭귀지란?** lang는 휴먼 랭귀지를 뜻하며 language의 약자이다. [한국(korean) : ko, 영어(english) : en, 일본(japan) : ja, 중국(china) : zh]
-3. <head> : 문서 서두에 해당, CSS를 비롯한 자바스크립트, 외부 페이지 연결 등의 구성을 하는 부분이다.
-4. <meta charset="utf-8"/> : 언어 캐릭터 셋 
+3. ```<head>``` : 문서 서두에 해당, CSS를 비롯한 자바스크립트, 외부 페이지 연결 등의 구성을 하는 부분이다.
+4. ```<meta charset="utf-8"/>``` : 언어 캐릭터 셋 
   - **언어 캐릭터 셋 :** HTML로 저장된 파일 내부에는 태그를 포함한 텍스트의 콘텐츠이다.
-5. <meta name="viewport" content="width=device-width, initial-scale=1.0"> :  페이지의 너비를 기기의 스크린 너비로 설정, 처음 페이지 로딩 시 확대/축소가 되지 않은 원래 크기를 사용 
-6. <meta name="viewport" content="width=device-width, initial-scale=1.0"> : IE 버전이 다르더라도 같은 화면을 볼 수 있도록 하는 것을 의미 
-5. <title></title> : 브라우저 탭 또는 즐겨찾기에 표시되는 제목 영역
-6. </head> : head 끝부분
-7. <body> : 실제 브라우저 화면에 표시되는 영역이다.
-8. </body> : body 끝부분
-9. </html> : html 끝부분
+5. ```<meta name="viewport" content="width=device-width, initial-scale=1.0">``` :  페이지의 너비를 기기의 스크린 너비로 설정, 처음 페이지 로딩 시 확대/축소가 되지 않은 원래 크기를 사용 
+6.``` <meta name="viewport" content="width=device-width, initial-scale=1.0">``` : IE 버전이 다르더라도 같은 화면을 볼 수 있도록 하는 것을 의미 
+5. ```<title></title>``` : 브라우저 탭 또는 즐겨찾기에 표시되는 제목 영역
+6. ```</head>``` : head 끝부분
+7. ```<body>``` : 실제 브라우저 화면에 표시되는 영역이다.
+8. ```</body>``` : body 끝부분
+9. ```</html>``` : html 끝부분
 
  
 ## 문서를 만들거나, 폴더를 만들 때 주의사항(이름, 문서, 폴더, 파일, 선택자 --> 전부 적용)
