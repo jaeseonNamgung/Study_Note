@@ -87,6 +87,7 @@ html에서는 마음대로 줄바꿈을 하거나 띄어쓰기를 할 수 없다
    <P>
     dummy text ever since the 1500s,
     when an unknown printer took a galley of type and scrambled it to make a type specimen book
+   </P>
 ```
 ![image](https://user-images.githubusercontent.com/84066249/133823749-8f268456-1cb9-40bc-9411-cfd6a761d77f.png)
 
@@ -120,7 +121,7 @@ p 태그를 사용할 경우 단락을 구분할 수 있다.
   
 ```html
     <h2>header-2</h2>
-    <p>What is Lorem Ipsum</P>
+    <P>What is Lorem Ipsum</P>
     <blockquote>
         Lorem Ipsum used since the 1500s is reproduced below for those interested.
     </blockquote>
