@@ -42,7 +42,7 @@
     
 </body>
 ```
-![image](https://user-images.githubusercontent.com/84066249/133980276-d7fb9f2c-c1fc-47b6-9a8e-5a243e59efa5.png)
+![image](https://user-images.githubusercontent.com/84066249/133987587-cb11b2cf-9a56-4720-9523-33de21ec8dda.png)
 
 ## 인용 표현
 - 인용할 문구를 표현
@@ -149,5 +149,5 @@
     
 </body>
 ```
-![image](https://user-images.githubusercontent.com/84066249/133987022-7a698c53-571d-4df0-b5c2-57a7d1d939e2.png)
+![image](https://user-images.githubusercontent.com/84066249/133987688-98878685-524e-4b7d-a012-f9400d96a120.png)
 
