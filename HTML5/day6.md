@@ -10,7 +10,7 @@
 - padding : 안쪽 여백(박스 형태에서 -> 안쪽으로 여백을 주고 싶을 때 지정) / 값 :ㅣ 숫자 입력(px, %, auto)
 - margin : 바깥 여백(박스 형태에서 -> 바깥으로 여백을 주고 싶거나 밀어 배치를 하고 싶을 때 지정) / 값:숫자입력(px, %, auto) 
 
-![image](https://user-images.githubusercontent.com/84066249/134329400-d5be1994-2849-44aa-9cc4-6d98f93f435b.png)
+![image](https://user-images.githubusercontent.com/84066249/134331158-7f1dd96b-41f4-4e71-9022-9ac47317d82a.png)
 
 ``` html
 <head>
