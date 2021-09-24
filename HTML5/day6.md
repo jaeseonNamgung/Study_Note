@@ -88,7 +88,7 @@
 
 
 # 여백, 사이즈
--padding, marjin : pading과 marjin은 상하좌우마다 각각 다른 값을 부여해 크기를 정할 수 있다. 
+- padding, marjin : pading과 marjin은 상하좌우마다 각각 다른 값을 부여해 크기를 정할 수 있다. 
  한자리 - padding "or" marjin - 방향 값(예 : padding-top ) / 두 자리 - 상하좌우  /  네 자리 - 시계방향 : top -> right -> botton -> left  
  
  1. **한자리만 값을 지정했을 경우** 
