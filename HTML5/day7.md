@@ -212,7 +212,7 @@ float의 외쪽으로 나열돼 있던 box3이 clear의 left 속성을 지정해
 ## display
 - 요소를 어떤 성격으로 보여줄지 결정하는 속성
 
-1. block -> inline / inline -> block 으로 속성 변경 
+1. block -> inline / inline -> block으로 속성 변경 
 
 ```html
 <head>
@@ -262,7 +262,7 @@ float의 외쪽으로 나열돼 있던 box3이 clear의 left 속성을 지정해
 
 ### inline-block 
 - 인라인과 블록의 합성 성격
-- 인라인과 같이 한 줄에 표현하면서도 block과 같이 정의가 이루어진 표현 -> margin, width, height 적용가능
+- 인라인과 같이 한 줄에 표현하면서도 block과 같이 정의가 이루어진 표현 -> margin, width, height 적용 가능
 - inline-block을 지정한 요소는 성격 자체는 인라인(inline) 요소처럼 동작하지만 해당 요소 내부에서는 블록(block) 요소처럼 동작  
 - 주로 요소를 나열하는 경우 사용되기도 한다. 
 
