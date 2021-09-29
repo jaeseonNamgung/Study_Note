@@ -60,7 +60,7 @@
 - 마우스의 반응에 따른 속성을 설정
 - 종류 : 
   - ```:checkd``` : 체크 상태의 input 태그에 선택
-  - ```:focus``` : 초정이 맞춰진 input 태그에 선택
+  - ```:focus``` : 초점이 맞춰진 input 태그에 선택
   - ```:enabled``` : 사용 가능한 input 선택
   - ```:disabled``` : 사용 불가능한 input 선택
 
