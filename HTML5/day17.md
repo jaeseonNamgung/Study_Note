@@ -98,4 +98,37 @@
 - ``` value="미리 작성 양식:``` : 미리 작성된 양식 뒤로 내용을 이 붙일 수 있도록 지원 
 
 
+```html
+<body>
+    <from>
+        <fieldset>
+            <legend>개인 정보 입력</legend>
+            <label>id</label>
+            <input type="text" name="id" />
+        </fieldset>
 
+        <input type="password" name="password" />
+        <br /><br />
+
+        <input type="search" name="search" />
+        <br /><br />
+
+        <input type="tel" placeholder="010-0000-0000" name="tel" />
+        <!-- placeholder : 미리보기 양식 지원 -->
+        <br /><br />
+
+        <input type="radio" />
+        <br /><br />
+
+        <input type="checkbox" />
+        <br /><br />
+
+        <input type="submit" value="확인" />
+        <input type="reset" value="취소" />
+        <br /><br />
+
+        <textarea></textarea>
+    </from>
+</body>
+```
+![image](https://user-images.githubusercontent.com/84066249/135705193-9b58aa61-1d29-4d7f-9e1e-d79c7ad25daf.png)
