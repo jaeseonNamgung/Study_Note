@@ -11,9 +11,9 @@
 ## form 관련 속성
 - ```action``` : 폼을 전송할 서버 쪽 스크립트 파일을 지정 / 폼 데이터가 전송되는 경로
   - ex)  
-  ```html 
-  <form action="/test/file/login_target.php">
-  ```
+      ```html 
+      <form action="/test/file/login_target.php">
+      ```
 - ```name``` : 폼을 식별하기 위한 이름을 지정 / 폼의 이름(id를 부여하기도 한다.)
   - ex)
     ```html
@@ -74,8 +74,9 @@
  
 - 
   ```html
-<textarea> </textarea>
+  <textarea> </textarea>
   ```
+
 : 긴 내용의 글자를 작성할 때 사용하는 양식
 
 - 
