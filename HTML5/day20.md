@@ -32,7 +32,7 @@
   - ```skewX(x축deg)``` : x축 기울이기
   - ```skewY(y축deg)``` : y축 기울이기
 
-- ```transform-origin``` : 변환 중심 축을 설정하는 속성
+- ```transform-origin``` : 변환 중심 축을 설정하는 속성(요소의 중심 기점을 변환하는 속성)
 - 표현 가능한 속성
   - ```transform-origin : x축 y축 z축
     - 백분율(%), 단어로 입력 가능
@@ -161,6 +161,55 @@
 왼쪽 -> transform 사용 전
 오른쪽 -> transform 사용 후
 
+- transform-origin
+
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+      section{
+          width:200px;
+          height: 200px;
+          border: 5px solid #000;
+          background-color:mediumslateblue;
+          margin:50px;
+          transform-origin: left bottom;
+      }
+      div{
+          font-size:20px;
+          text-align:center;
+          line-height: 180px;
+          font-weight: 900;
+
+      }
+
+      section:hover{
+          transition-duration: 0.5s;
+          transform:rotate(90deg)
+      }
+
+    </style>
+
+</head>
+
+<body>
+       <section>
+           <div>transform-origin</div>
+       </section>
+</body>
+```
+
+![image](https://user-images.githubusercontent.com/84066249/136480752-563c54fb-c335-463d-843f-6d1262ef577c.png)
+
+위에 그림에서 왼쪽 박스가 오른쪽 박스처럼 결과가 나오는 예시이다. transform-origin은 요소의 중심 기점을 변환하는 것으로 rotate 속성과같이 사용했기 때문에 회전을 하면서 중심 기점이 변한 걸 알 수 있다.
 
 
 
