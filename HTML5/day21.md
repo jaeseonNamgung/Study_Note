@@ -1,5 +1,5 @@
 # transition
-- 선택자가 변화되거나 혹은 동작이 있을때 시간의 흐름을 부여하여 변화시키는 속성
+- 선택자가 변화되거나 혹은 동작이 있을 때 시간의 흐름을 부여하여 변화시키는 속성
 
 ## transition과 함께 사용 가능한 속성들
 - 사이즈 관련 : width, height, mergin, padding
@@ -209,9 +209,93 @@
 
 ![ezgif com-gif-maker](https://user-images.githubusercontent.com/84066249/136650040-623a70de-c913-458c-90b2-1329f6d8ca49.gif)
 
-- transition-property 사용법
+3. transition-property 사용법
 
-- tansition-timing-function 사용법
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        #header {
+            width: 700px;
+            overflow: hidden;
+            border: 5px solid #000;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -350px;
+            margin-left: -400px;
+
+        }
+
+        .line {
+            width: 50px;
+            height: 50px;
+            margin: 20px;
+            background-color: cadetblue;
+        }
+
+        /* 각각 같은 색상에서 커서를 박스에 올렸을 때 각각 다른 배경 색상과 폭 값의 변화 과정 */
+        #header:hover .line:nth-child(1) {
+            width: 210px;
+            background-color: aquamarine;
+        }
+
+        #header:hover .line:nth-child(2) {
+            width: 310px;
+            background-color: burlywood;
+        }
+
+        #header:hover .line:nth-child(3) {
+            width: 410px;
+            background-color: coral;
+        }
+
+        #header:hover .line:nth-child(4) {
+            width: 510px;
+            background-color: darkgreen;
+        }
+
+        #header:hover .line:nth-child(5) {
+            width: 610px;
+            background-color: darkorchid;
+        }
+
+        #header:hover .line {
+            width: 610px;
+        }
+
+        .line {
+            transition-property: width, background-color;
+            transition-duration: 3s, 1s;
+            /* 배경 색상을 3초 동안, 폭 값은 1초 동안 변화 */
+        }
+    </style>
+</head>
+<section>
+    <div id="header">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</section>
+
+</body>
+```
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/84066249/136678472-e3735c4f-ad87-4c9f-a554-981a9bef593f.gif)
+
+
+
+4. tansition-timing-function 사용법
 
 ```html
 <head>
