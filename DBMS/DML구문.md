@@ -1,4 +1,4 @@
-# DML(Data Manipulation Language)
+ # DML(Data Manipulation Language)
 - 데이터베이스에 저장된 데이터를 조작하기 위해 사용하는 언어 
 - SELECT(조회), INSERT(삽입), UPDATE(변경), DELETE(삭제)
 - DML 구문이 사용되는 대상은 테이블의 행이다.
