@@ -36,7 +36,6 @@ SELECT[* / DISTINCT] FROM 테이블명 [WHERE 조건식];
                                     [HAVING 조건식];
                                     [ORDER BY ASC / DESC];
 ```
-
 ### SELECT 기본 함수 
 - ```COUNT(속성)``` : 해당 열(COLUNM)이 있는 행(ROW)의 총개수
 - ```SUM(속성)``` : 해당 열(COLUNM)이 있는 데이터들의 합
