@@ -42,3 +42,11 @@ background-origin : border-box | padding-box | content-box
 - padding-box : 박스 모델에서 테두리를 뺀 패딩(padding)이 기준이 된다.
 - content-box : 박스 모델에서 내용 부분이 기준이 된다.
 
+# background-attachment 속성 - 배경 이미지 고정하기
+- 보통 스크롤을 내렸을 경우 배경 이미지도 같이 내려가지만 background-attachment 속성을 사용할 경우 배경 이미지를 고정할 수 있다.
+
+```css
+background-attachment : scroll | fixed
+```
+- scroll : 화면 스크롤과 함께 이미지도 스크롤된다.(기본 값)
+- fixed : 화면이 스크롤되더라도 배경 이미지는 고정된다.
