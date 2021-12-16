@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+	<!-- JNDI(Java Naming Directory Interface) : 
+		참조파일을 미리 준비해두고 필요할 때 가져다가 쓸 수 있도록 만들어둔 구조-->
+	<Resource 
+	        auth="Container" 
+      		name="jdbc/oracle_test"
+      		type="javax.sql.DataSource"
+      		driverClassName="oracle.jdbc.driver.OracleDriver"
+      		factory="org.apache.commons.dbcp.BasicDataSourceFactory"
+      		url="jdbc:oracle:thin:@localhost:1521:xe"
+      		username="web_pm" password="1111" 
+      		maxActive="10" maxIdle="10" maxWait="1"/>
+      		<!-- maxActive : 최대연결 수 
+      			DBCP(database connection pool) -->
+</Context>
