@@ -6,17 +6,20 @@
 
 ## flex 레이아웃 사용방법
 
+```html
 <style>
  .box{
         display:flex;
       }
 </style>
-
-<div class="box box01">
+<html>
+  <div class="box box01">
         <div></div>
         <div></div>
         <div></div>
-    </div>
+  </div>
+</html>
+```
 
 - flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block속성과 inline속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그안에 flex 레이아웃을 지정해줘야 한다.
 
@@ -42,6 +45,7 @@
 
 ## justify-content과 align-item
 
+```html
 <style>
        .box{margin-bottom:100px; padding:20px; background-color: pink;
             display:flex;
@@ -63,7 +67,7 @@
         <div></div>
     </div>
 </html>
-
+```
 
 
 ![screencapture-127-0-0-1-5500-day15-0509-test01-html-2022-05-09-19_17_14](https://user-images.githubusercontent.com/84066249/167390291-59cd3086-3d18-455f-9beb-8576192700e6.png)
@@ -87,6 +91,7 @@
 flex-direction : row | row-reverse | column | column-reverse
 ```
 
+```html
 <style>
     .box01{flex-direction: row;}
     .box01{flex-direction: row-reverse;}
@@ -124,7 +129,7 @@ flex-direction : row | row-reverse | column | column-reverse
         <div></div>
     </div>
 </html>
-
+```
 
 
  ![1](https://user-images.githubusercontent.com/84066249/167391900-fffe8b02-ab22-44c0-90c2-d86f8335546a.png)
@@ -145,6 +150,7 @@ flex-direction : row | row-reverse | column | column-reverse
 flex-wrap : nowrap | wrap | wrap-reverse
 ```
 
+```html
 <style>
     .box01{flex-wrap: nowrap;}
     .box02{flex-wrap: wrap;}
@@ -193,7 +199,7 @@ flex-wrap : nowrap | wrap | wrap-reverse
         <div>box10</div>
     </div>
 </html>
-
+```
 ![1](https://user-images.githubusercontent.com/84066249/167393842-62880af8-11a2-4494-894a-6e928aa96886.png)
 ![2](https://user-images.githubusercontent.com/84066249/167393848-d7eef560-6e7e-406e-ab1e-5461c5acb167.png)
 
@@ -215,7 +221,7 @@ order: 0 | 숫자
 ```
 
 
-
+```html
 <style>
     .box01{order:3;}
     .box02{order:1;}
@@ -228,7 +234,7 @@ order: 0 | 숫자
         <div class="box03">box03</div>
     </div>
 </html>
-
+```
 ![1](https://user-images.githubusercontent.com/84066249/167396032-62f57bc7-e4c2-4a30-8ef0-41667993d4ab.png)
 
 - order 속성은 플렉스 컨테이너 안에 플렉스 항목에서 지정해야 한다. order 값이  0일경우 기본값으로 그 순서대로 배치된다.
@@ -251,6 +257,7 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
 | auto        | 항목의 width/height 값에 의해 크기가 결정되며 플렉스 컨테이너의 공간이 부족할 경우, 최소 크기까지 줄인다. |
 | initial     | 항목의 whdth/height 값에 의해 크기가 결정되지만 플렉스 컨테이너의 공간에 따라 늘이거나 줄인다. |
 
+```html
 <style>
         .box01{flex:2 2 0;}
         /* 2배 줄이거나 2배 늘린다. */
@@ -269,7 +276,7 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
         <div>box</div>
   </div>
 </html>
-
+```
 
 
 
