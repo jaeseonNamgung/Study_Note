@@ -153,7 +153,7 @@ flex-direction : row | row-reverse | column | column-reverse
 | **column**         | **위에서 아래로 세로로 배치**                                |
 | **column-reverse** | **아래에서 위로 배치(플렉스 항목도 아래에서 위로 요소 정렬)** |
 
-**align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차축을 확장한다. 기본값 **
+** align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차축을 확장한다. 기본값 **
 
 
 
@@ -266,14 +266,11 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
 
 | 속성 값     | 설명                                                         |
 | ----------- | ------------------------------------------------------------ |
-<<<<<<< HEAD
 | flex-grow   | 플렉스 항목의 너비를 얼마나 늘릴지를 숫자로 지정             |
 | flex-shrink | 플렉스 항목의 너브를 얼마나 줄일지를 숫자로 지정             |
 | flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto 를 지정할 수 도 있다. 0일 경우 , flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
-=======
 | flex-shrink | 플렉스 항목의 너비를 얼마나 줄일지를 숫자로 지정             |
 | flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto를 지정할 수 도 있다. 0일 경우, flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
->>>>>>> 66b6cb237e33788fea78041fa20eba055dbb9af4
 | auto        | 항목의 width/height 값에 의해 크기가 결정되며 플렉스 컨테이너의 공간이 부족할 경우, 최소 크기까지 줄인다. |
 | initial     | 항목의 whdth/height 값에 의해 크기가 결정되지만 플렉스 컨테이너의 공간에 따라 늘이거나 줄인다. |
 
