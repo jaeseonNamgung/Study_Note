@@ -12,7 +12,16 @@
         display:flex;
       }
 </style>
+<html>
+  <div class="box box01">
+        <div></div>
+        <div></div>
+        <div></div>
+  </div>
+</html>
+```
 
+<<<<<<< HEAD
 <div class="box box01">
         <div></div>
         <div></div>
@@ -20,6 +29,9 @@
     </div>
 ```
 - flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block속성과 inline속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그안에 flex 레이아웃을 지정해줘야 한다.
+=======
+- flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block 속성과 inline 속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그안에 flex 레이아웃을 지정해 줘야 한다.
+>>>>>>> 66b6cb237e33788fea78041fa20eba055dbb9af4
 
 - flex 레이아웃은 기본적으로 왼쪽에서 오른쪽으로 수평 방향으로 박스가 나열된다. (inline 레이아웃과 같은 속성을 갖는다.) 
 
@@ -91,6 +103,7 @@
 flex-direction : row | row-reverse | column | column-reverse
 ```
 
+```html
 <style>
     .box01{flex-direction: row;}
     .box01{flex-direction: row-reverse;}
@@ -128,7 +141,7 @@ flex-direction : row | row-reverse | column | column-reverse
         <div></div>
     </div>
 </html>
-
+```
 
 
  ![1](https://user-images.githubusercontent.com/84066249/167391900-fffe8b02-ab22-44c0-90c2-d86f8335546a.png)
@@ -140,7 +153,7 @@ flex-direction : row | row-reverse | column | column-reverse
 | **column**         | **위에서 아래로 세로로 배치**                                |
 | **column-reverse** | **아래에서 위로 배치(플렉스 항목도 아래에서 위로 요소 정렬)** |
 
-**align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차측을 확장한다. 기본값 **
+**align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차축을 확장한다. 기본값 **
 
 
 
@@ -150,6 +163,7 @@ flex-direction : row | row-reverse | column | column-reverse
 flex-wrap : nowrap | wrap | wrap-reverse
 ```
 
+```html
 <style>
     .box01{flex-wrap: nowrap;}
     .box02{flex-wrap: wrap;}
@@ -198,7 +212,7 @@ flex-wrap : nowrap | wrap | wrap-reverse
         <div>box10</div>
     </div>
 </html>
-
+```
 ![1](https://user-images.githubusercontent.com/84066249/167393842-62880af8-11a2-4494-894a-6e928aa96886.png)
 ![2](https://user-images.githubusercontent.com/84066249/167393848-d7eef560-6e7e-406e-ab1e-5461c5acb167.png)
 
@@ -221,7 +235,7 @@ order: 0 | 숫자
 ```
 
 
-
+```html
 <style>
     .box01{order:3;}
     .box02{order:1;}
@@ -234,7 +248,7 @@ order: 0 | 숫자
         <div class="box03">box03</div>
     </div>
 </html>
-
+```
 ![1](https://user-images.githubusercontent.com/84066249/167396032-62f57bc7-e4c2-4a30-8ef0-41667993d4ab.png)
 
 - order 속성은 플렉스 컨테이너 안에 플렉스 항목에서 지정해야 한다. order 값이  0일경우 기본값으로 그 순서대로 배치된다.
@@ -252,12 +266,18 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
 
 | 속성 값     | 설명                                                         |
 | ----------- | ------------------------------------------------------------ |
+<<<<<<< HEAD
 | flex-grow   | 플렉스 항목의 너비를 얼마나 늘릴지를 숫자로 지정             |
 | flex-shrink | 플렉스 항목의 너브를 얼마나 줄일지를 숫자로 지정             |
 | flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto 를 지정할 수 도 있다. 0일 경우 , flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
+=======
+| flex-shrink | 플렉스 항목의 너비를 얼마나 줄일지를 숫자로 지정             |
+| flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto를 지정할 수 도 있다. 0일 경우, flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
+>>>>>>> 66b6cb237e33788fea78041fa20eba055dbb9af4
 | auto        | 항목의 width/height 값에 의해 크기가 결정되며 플렉스 컨테이너의 공간이 부족할 경우, 최소 크기까지 줄인다. |
 | initial     | 항목의 whdth/height 값에 의해 크기가 결정되지만 플렉스 컨테이너의 공간에 따라 늘이거나 줄인다. |
 
+```html
 <style>
         .box01{flex:2 2 0;}
         /* 2배 줄이거나 2배 늘린다. */
@@ -276,7 +296,7 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
         <div>box</div>
   </div>
 </html>
-
+```
 
 
 
