@@ -19,22 +19,15 @@
         <div></div>
   </div>
 </html>
-```
-
-<<<<<<< HEAD
 <div class="box box01">
         <div></div>
         <div></div>
         <div></div>
     </div>
 ```
-- flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block속성과 inline속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그안에 flex 레이아웃을 지정해줘야 한다.
-=======
-- flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block 속성과 inline 속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그안에 flex 레이아웃을 지정해 줘야 한다.
->>>>>>> 66b6cb237e33788fea78041fa20eba055dbb9af4
 
+- flex 레이아웃은 display  속성을 이용해 flex 레이아웃을 지정한다.  flex 레이아웃은 block속성과 inline속성과 달리 레이아웃을 지정하려는 위치에 직접 레이아웃을 지정하는 것이 아니라 부모 태그에 flex 레이아웃을 지정해줘야 한다.
 - flex 레이아웃은 기본적으로 왼쪽에서 오른쪽으로 수평 방향으로 박스가 나열된다. (inline 레이아웃과 같은 속성을 갖는다.) 
-
 - flex 레이아웃의 진행 반향을 주축이라고 하며 주축의 반대 방향을 교차축이라고한다.
 
 
@@ -95,7 +88,8 @@
 | **space-evenly**  | **모든 플렉스 항목의 양 옆을 같은 간견으로 배치**            |
 | **space-between** | **첫번째 플렉스 항목은 시작점에 마지막 플렉스 항목은 끝점에 배치후 중앙 항목들은 같은 간격으로 배치** |
 
-
+- align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차축을 확장한다. 기본값
+- align-item: baseline -> 시작점과 글자 기준선이 가장 먼 플렉스 항목을 시작점에 배치. 그리고 그 글자의 기준선과 다른 항목의 기준선을 맞추어 
 
 ## flex-direction 속성 - 플렉스 방향 지정
 
@@ -152,9 +146,6 @@ flex-direction : row | row-reverse | column | column-reverse
 | **row-reverse**    | **주축을 가로로 배치하되 끝점에서 시작점으로 배치( 플렉스 항목도 끝점을 시작으로 시작점을 마지막으로 요소 정렬)** |
 | **column**         | **위에서 아래로 세로로 배치**                                |
 | **column-reverse** | **아래에서 위로 배치(플렉스 항목도 아래에서 위로 요소 정렬)** |
-
-**align-item: stretch -> 플렉스 항목을 플렉스 컨테이너 크기만큼 교차축을 확장한다. 기본값 **
-
 
 
 ## flex-wrap 속성 - 플렉스 항목을 한 줄 또는 여러 줄로 배치
@@ -266,14 +257,9 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
 
 | 속성 값     | 설명                                                         |
 | ----------- | ------------------------------------------------------------ |
-<<<<<<< HEAD
 | flex-grow   | 플렉스 항목의 너비를 얼마나 늘릴지를 숫자로 지정             |
-| flex-shrink | 플렉스 항목의 너브를 얼마나 줄일지를 숫자로 지정             |
-| flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto 를 지정할 수 도 있다. 0일 경우 , flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
-=======
 | flex-shrink | 플렉스 항목의 너비를 얼마나 줄일지를 숫자로 지정             |
-| flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto를 지정할 수 도 있다. 0일 경우, flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
->>>>>>> 66b6cb237e33788fea78041fa20eba055dbb9af4
+| flex-basis  | 플렉스 항목의 기본 크기를 지정, width 속성 처럼 너비 값을 지정할 수 있고 0이나 auto 를 지정할 수 도 있다. 0일 경우 flex-grow와 flex-shrink의 인수 값을 함께 사용하고  auto일 경우 플렉스 항목의 너비 값을 사용한다. |
 | auto        | 항목의 width/height 값에 의해 크기가 결정되며 플렉스 컨테이너의 공간이 부족할 경우, 최소 크기까지 줄인다. |
 | initial     | 항목의 whdth/height 값에 의해 크기가 결정되지만 플렉스 컨테이너의 공간에 따라 늘이거나 줄인다. |
 
@@ -312,9 +298,6 @@ flex : [flex-grow | flex-shrink | flex-basis] | auto | initial
 ``` 
 align-self : auto | stretch | flex-start | flex-end | center | baseline
 ```
-
-
-
 - 교차축에서 특정 플렉스 항목에 위치를 배치하고 싶을 때 사용하며 지정하려는 플렉스 항목에 직접 align-self 속성을 지정한다.
 
 ## align-content 속성 - 여러 줄일 때의 배치 지정(두 줄 이상일 때 적용 가능)
