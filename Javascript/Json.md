@@ -1,6 +1,6 @@
 # Json(Javascript Object Notation)
 
-- json는 {key:value}로 구문된다.
+- Json는 {key:value}로 구문된다.
 
 - 텍스트 기반으로한 언어이다.
 
@@ -8,7 +8,22 @@
 
 - 특정 프로그램과 상관없이 모든 언어에 사용 가능하다.
 
-  
+- Json은 순수 데이터 포맷이다. 오직 프로퍼티만 담을 수 있고, 메서드는 담을 수 없다.
+
+- Json은 문자열과 프로퍼티 작석시 큰 따옴표만 작성 가능하다. (작은 따옴표 사용X)
+
+- Json은 모든 데이터 타입을 취할 수 있다. 배열이나 오브젝트 외에 단일 문자열이나, 숫자 또한 Json형으로 변환이 가능하다.
+
+
+
+##  stringify( ) 메서드 , parse()
+
+- stringfy( ) 메서드는 Json으로 형 변환할 때 사용하는 메서드이다.
+- parse() 메서드는 Json형에서 Object 형으로 변환하는 메서드이다.
+
+```javascript
+let json = JSON.stringify(변환하려는 value);
+```
 
 
 
@@ -78,4 +93,58 @@ console.log(typeof obj.birthDate);
 ```
 
 
+
+### replacer로 원하는 프로퍼티만 직렬화 하는 방법
+
+```javascript
+let json = Json.stringify(value,[replacer],space );
+// or
+let json = Json.stringify(value, callback, space);
+```
+
+- value : 인코딩 하려는 값
+- replacer : json으로 인코딩 하길 원하는 프로퍼티 또는 함수 (null 이거나 아무것도 작성하지 않으면 모든 값을 포함한다.)
+- space : 공백 문자 수, 가독성 목적
+
+``` javascript
+const anotherObj = {
+    alive:true,
+    age:20,
+    hobbies : ['Coffee', 'Sleep', 'Working'],
+    beverage : {
+        morning : 'Coffee',
+        afternoon : 'Apple Tea'
+    },
+    action:function(){
+        return "Hello Javascript Object";
+    },
+    reBeverage:function(){
+        return `Time for ${this.beverage.morning}`;
+    }
+};
+
+function filter(key, value){
+    return typeof value === "number" ? undefined : value;
+}
+// 함수를 이용한 방법
+const jsonFilterObj = JSON.stringify(anotherObj, filter, 4);
+// 출력 결과 
+{
+  alive: true,
+  hobbies: [ 'Coffee', 'Sleep', 'Working' ],
+  beverage: { morning: 'Coffee', afternoon: 'Apple Tea' }
+}
+
+// 배열을 이용한 방법
+const jsonArrayObj = JSON.stringify(anotherObj, ['alive', 'hobbies'], 4);
+// 출력 결과 
+{
+    "alive": true,
+    "hobbies": [
+        "Coffee",
+        "Sleep",
+        "Working"
+    ]
+}
+```
 
