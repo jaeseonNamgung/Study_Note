@@ -29,9 +29,12 @@ server.listen(PORT, function(){
 ```
 
 3. node.js  event 객체인 on 메서드를 이용해 request, response를 실행한다.
-   - `writeHead(statusCode, statusMessage)` : response 객체의 메서드에서 헤더 정보를 응답해서 내보내는 기능
-   - `write('')` : body 부분의 콘텐츠 작성
-   - `end()` : 응답 완료
+   
+   - `request.url()` : URL 경로와 쿼리 스트링을 반환
+   
+   - `response.writeHead(statusCode, statusMessage)` : response 객체의 메서드에서 헤더 정보를 응답해서 내보내는 기능
+   - `response.write('')` : body 부분의 콘텐츠 작성
+   - `response.end()` : 응답 완료
 
 ``` javascript
 // server.on('request', function(request, response){}); 
