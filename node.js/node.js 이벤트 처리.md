@@ -24,7 +24,7 @@ emitter.addListener('eventname', listener);
 emitter.once('eventname', listener)
 ```
 
-​	4. emit : 이벤트를 발생시키는 함수
+4. emit : 이벤트를 발생시키는 함수
 
 ```javascript
 emitter.emit('eventname', '전달하려는 값');
