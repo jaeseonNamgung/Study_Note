@@ -39,6 +39,7 @@ server.listen(PORT, function(){
 ``` javascript
 // server.on('request', function(request, response){}); 
 server.on('request', (request, response)=>{
+    console.log(request.url);
     response.writeHead(200, {'Content-Type':'text/plain;charset=utf-8'});
     response.write('응답성공');
     response.end();
