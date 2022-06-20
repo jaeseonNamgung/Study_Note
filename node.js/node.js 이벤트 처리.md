@@ -38,7 +38,7 @@ emitter.off('eventname', listener);
 emitter.removeAllListeners('eventname', listener);
 ```
 
-	6. listnerCount : 이벤트가 연결된 리스너의 index를 반환
+6. listnerCount : 이벤트가 연결된 리스너의 index를 반환
 
 ```javascript
 emitter.listnerCount('eventname');
