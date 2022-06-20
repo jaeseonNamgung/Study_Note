@@ -1,6 +1,6 @@
 # http 모듈
 
-**HTTP(Hyper Text Transfer Protocol)** 은 TCP/IP 기반 프로토콜로, HTML 페이지를 전달하는데 주로 사용한다.
+**HTTP(Hyper Text Transfer Protocol)**은 TCP/IP 기반 프로토콜로, HTML 페이지를 전달하는데 주로 사용한다.
 
 node.js에서 HTTP 모듈을 웹 서버를 구동하기 위해서 사용되는 기본 내부 모듈이다.
 
@@ -39,6 +39,7 @@ server.listen(PORT, function(){
 ``` javascript
 // server.on('request', function(request, response){}); 
 server.on('request', (request, response)=>{
+    console.log(request.url);
     response.writeHead(200, {'Content-Type':'text/plain;charset=utf-8'});
     response.write('응답성공');
     response.end();
