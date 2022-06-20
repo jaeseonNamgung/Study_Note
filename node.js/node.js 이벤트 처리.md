@@ -24,7 +24,7 @@ emitter.addListener('eventname', listener);
 emitter.once('eventname', listener)
 ```
 
-​	4. emit : 이벤트를 발생시키는 함수
+4. emit : 이벤트를 발생시키는 함수
 
 ```javascript
 emitter.emit('eventname', '전달하려는 값');
@@ -38,7 +38,7 @@ emitter.off('eventname', listener);
 emitter.removeAllListeners('eventname', listener);
 ```
 
-	6. listnerCount : 이벤트가 연결된 리스너의 index를 반환
+6. listnerCount : 이벤트가 연결된 리스너의 index를 반환
 
 ```javascript
 emitter.listnerCount('eventname');
